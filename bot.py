@@ -2,9 +2,9 @@ import discord
 from discord.ext import commands
 from yahoo_fin import stock_info as si
 from yahoo_fin.stock_info import *
-TOKEN = 'Insert your own token'
+TOKEN = 'NzYxMTAyNTkzNzQ1MDkyNjM4.X3VuBg.eI1wWjF-hHB5g7rtC9qw38zd8jo'
 client = commands.Bot(command_prefix = '!')
-# api_key = 'NJF29BB3PLB7NLKQ'
+# api_key = 'RI9uMBS5Uv0jE3zLNZyM6wE2plX7hdoK'
 def stock(ticker):
     try:
         return str(round(si.get_live_price(ticker), 2))
